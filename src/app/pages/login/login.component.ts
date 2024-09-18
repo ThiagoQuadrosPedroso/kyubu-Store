@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+ formulario = new FormGroup ({
+  login:new FormControl(''),
+  senha:new FormControl('')
+
+ })
+
+
+
+
+
 
 }

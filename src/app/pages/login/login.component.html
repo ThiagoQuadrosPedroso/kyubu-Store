@@ -2,14 +2,14 @@
     <div class="login-container">
         <a routerLink="/catalogo">Voltar</a>
         <h2>Login</h2>
-        <form>
+        <form [formGroup]="formulario">
             <div class="input-group">
                 <label for="username">Usuário</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" required formControlName="login">
             </div>
             <div class="input-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
+                <label for="Senha">Senha</label>
+                <input type="Senha" id="Senha" name="Senha" required formControlName="Senha">
             </div>
             <button type="submit">Entrar</button>
         </form>
