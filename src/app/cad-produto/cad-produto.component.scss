@@ -1,0 +1,81 @@
+.container {
+    width: 88vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:0;
+    right: 0;
+  }
+  
+form{
+    width: 40%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff0026;
+  }
+  
+  .btn-primary {
+    background-color: #ff0026;
+  }
+  
+  .btn-primary:hover {
+    background-color: #b30000;
+  }
+  
+  .btn-info {
+    background-color: #b81717;
+  }
+  
+  .btn-info:hover {
+    background-color: #961313;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #00ff51;
+  }

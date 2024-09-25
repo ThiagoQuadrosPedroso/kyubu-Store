@@ -1,0 +1,62 @@
+<app-menu></app-menu>
+
+    <div class="container">
+        <h1>Movimentação de Produtos</h1>
+        <form id="movimentacaoForm">
+            <label for="id">ID:</label>
+            <input type="number" id="id" name="id" required>
+
+            <label for="dtMovimentacao">Data da Movimentação:</label>
+            <input type="date" id="dtMovimentacao" name="dtMovimentacao" required>
+
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto" required>
+                <option value="">Selecione um produto</option>
+                <option value="produto1">Cubo Magico 3x3 Mag</option>
+                <option value="produto2">Cubo Magico 2x2</option>
+                <option value="produto3">Cubo Magico 5x5</option>
+                <option value="produto4">Cubo Magico Profissional 12 Lados</option>
+                <option value="produto5">Cubo Phantom</option>
+                <option value="produto6">Cubo Magico 15x15 Mag</option>
+                <option value="produto7">Pyraminx Classico</option>
+                <option value="produto8">Cubo Mágico Square</option>
+            </select>
+            <div class="box-degrade"></div>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required>
+
+            <label for="tipo">Tipo de Movimentação:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione o tipo</option>
+                <option value="entrada">Entrada</option>
+                <option value="saída">Saída</option>
+            </select>
+
+            <button type="submit">Registrar Movimentação</button>
+        </form>
+        <table>
+            <tr>
+              <th>Id</th>
+              <th>Data de Movimentação</th>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Tipo de Movimentação</th>
+           
+      
+          </tr>
+            <tr>
+              
+              <td>1</td>
+              <td>20/072024</td>
+              <td>Cubo Magico 3x3</td>
+              <td>5</td>
+              <td>Saida</td>
+              <td><button>Excluir</button></td>
+            </tr>
+          </table>
+
+        <div id="relatorio" class="relatorio">
+            <!-- Relatório será gerado aqui -->
+        </div>
+    </div>

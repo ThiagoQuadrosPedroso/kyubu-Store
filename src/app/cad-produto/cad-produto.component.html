@@ -1,0 +1,91 @@
+<app-menu></app-menu>
+    <div class="container">
+        <h1>Cadastro de Produtos</h1>
+       
+           <form><div class="form-group">
+            <label for="id">ID:</label>
+            <input id="id" formControlName="id" type="number" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input id="nome" formControlName="nome" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="tipo">tipo:</label>
+            <input id="tipo" formControlName="tipo" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="link">Link:</label>
+            <input id="link" formControlName="link" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="id_fabricante">Id Fabricante:</label>
+            <input id="id_fabricante" formControlName="id_fabricante" type="text" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="Valor">Valor:</label>
+            <input id="Valor" formControlName="Valor" type="text" class="form-control">
+          </div>
+          <div class="form-group"></div>
+            <label for="Garantia">Garantia:</label>
+            <input id="Garantia" formControlName="Garantia" type="text" class="form-control">
+           
+           <div class="form-group"></div>
+            <label for="Descricao">Descrição:</label>
+            <input id="Descricao" formControlName="Descricao" type="text" class="form-control">
+           
+           <button class="btn">Cadastrar Produto</button>
+           <button class="btn">Cancelar</button>
+    </form>
+    
+    <table>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>tipo</th>
+          <th>Link</th>
+          <th>Id Fabricante</th>
+          <th>Valor</th>
+          <th>Garantia</th>
+          <th>Descrição</th>
+  
+      </tr>
+        <tr>
+          <td><button>Excluir</button></td>
+          <td>1</td>
+          <td>Cubo Magico</td>
+          <td>3x3</td>
+          <td>1</td>
+          <td>33,99</td>
+          <td>1ano</td>
+          <td>CuboMagico3X3 Magnetico</td>
+        </tr>
+      </table>
+  </div>
+      
+          
+            
+           
+           
+
+        
+
+            
+   
+
+    <script>
+        document.getElementById('formProduto').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+
+            const acao = document.getElementById('acao').value;
+            const id = document.getElementById('id').value;
+            const nome = document.getElementById('nome').value;
+            const tipo = document.getElementById('tipo').value;
+            const link = document.getElementById('link').value;
+
+            // Aqui você pode adicionar lógica para processar os dados
+            console.log('Produto Cadastrado:', { acao, id, nome, tipo, link });
+            alert('Produto cadastrado com sucesso!');
+        });
+    </script>
+
