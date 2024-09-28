@@ -11,6 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { CadUsuarioComponent } from './cad-usuario/cad-usuario.component';
 import { CadProdutoComponent } from './cad-produto/cad-produto.component';
 import { MovProdutosComponent } from './mov-produtos/mov-produtos.component';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
+import { provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { MovProdutosComponent } from './mov-produtos/mov-produtos.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [provideHttpClient(),],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
