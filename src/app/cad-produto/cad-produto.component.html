@@ -2,7 +2,7 @@
     <div class="container">
         <h1>Cadastro de Produtos</h1>
        
-           <form><div class="form-group">
+           <form [formGroup]="formulario"><div class="form-group">
             <label for="id">ID:</label>
             <input id="id" formControlName="id" type="number" class="form-control">
           </div>
@@ -23,19 +23,19 @@
             <input id="id_fabricante" formControlName="id_fabricante" type="text" class="form-control">
           </div>
           <div class="form-group">
-            <label for="Valor">Valor:</label>
-            <input id="Valor" formControlName="Valor" type="text" class="form-control">
+            <label for="valor">Valor:</label>
+            <input id="valor" formControlName="valor" type="text" class="form-control">
           </div>
           <div class="form-group"></div>
-            <label for="Garantia">Garantia:</label>
-            <input id="Garantia" formControlName="Garantia" type="text" class="form-control">
+            <label for="garantia">Garantia:</label>
+            <input id="garantia" formControlName="garantia" type="text" class="form-control">
            
            <div class="form-group"></div>
-            <label for="Descricao">Descrição:</label>
-            <input id="Descricao" formControlName="Descricao" type="text" class="form-control">
+            <label for="descricao">Descrição:</label>
+            <input id="descricao" formControlName="descricao" type="text" class="form-control">
            
-           <button class="btn">Cadastrar Produto</button>
-           <button class="btn">Cancelar</button>
+           <button (click)="onSave()">Cadastrar Produto</button>
+           <button (click)="onCancelar()">Cancelar</button>
     </form>
     
     <table>
