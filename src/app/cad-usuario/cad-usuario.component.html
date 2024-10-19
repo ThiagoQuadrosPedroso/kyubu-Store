@@ -30,7 +30,10 @@
       </div>
       <div class="form-group">
         <label for="tipo">Tipo:</label>
-        <input id="tipo" formControlName="tipo" type="text" class="form-control">
+        <select id="tipo" formControlName="tipo" type="text" class="form-control">
+          <option>Selecione</option>
+          <option *ngFor="let tipo of arrTipos"[value]="tipo.id_tipo">{{tipo.descricao}}</option>
+          </select>
       </div>
       <button (click)="onSave()">Cadastrar</button>
       <button (click)="onCancelar()">Cancelar</button>
