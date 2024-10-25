@@ -17,8 +17,12 @@
         <input id="sobrenome" formControlName="sobrenome" type="text" class="form-control">
       </div>
       <div class="form-group">
-        <label for="idade">Idade:</label>
-        <input id="idade" formControlName="idade" type="number" class="form-control">
+        <label for="dt_nascimento">Data de Nascimento:</label>
+        <input id="dt_nascimento" formControlName="dt_nascimento" type="date" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="login">Login:</label>
+        <input id="login" formControlName="login" class="form-control">
       </div>
       <div class="form-group">
         <label for="telefone">Telefone:</label>
@@ -37,6 +41,7 @@
       </div>
       <button (click)="onSave()">Cadastrar</button>
       <button (click)="onCancelar()">Cancelar</button>
+      <p>{{mensagem}}</p>
     </form>
 
     <table>

@@ -21,11 +21,15 @@ export class CadUsuarioComponent {
   id : new FormControl(''),
   nome : new FormControl(''),
   sobrenome : new FormControl(''),
-  idade : new FormControl(''),
+  dt_nascimento : new FormControl(''),
+  login : new FormControl(''),
   telefone : new FormControl(''),
   email : new FormControl(''),
   tipo : new FormControl('')
   })
+
+
+  mensagem:string = '';
 
   onSave(){
     //chama o serviço para gravar as informações no banco de dados//
@@ -33,9 +37,11 @@ export class CadUsuarioComponent {
     this.usuarioService.salvar(dados).subscribe({
     next:(res)=>{
       console.log(res)
+      this.mensagem = 'Usuario adicionado com sucesso!';
     },
     error:(erro)=>{
       console.log(erro)
+      this.mensagem = 'Erro ao adicionar usuário.';
     }
 
     })
